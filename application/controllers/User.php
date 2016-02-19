@@ -18,10 +18,7 @@ class User extends CI_Controller{
     public function __construct(){
     	
         parent::__construct();
-        $this->load->library(array('session', 'form_validation', 'email'));
-        $this->load->helper(array('form','url','html'));
-        $this->load->library(array('session', 'form_validation'));
-       // $this->load->database();
+
         $this->load->model('user_model');
         $this->load->model('login_model');
     }
