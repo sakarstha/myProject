@@ -37,10 +37,11 @@ class User_model extends CI_Model
     			$sessiondata = array('username'=>$data['username'], 'loginuser'=> TRUE	);
     			$this->session->set_userdata($sessiondata);
     			//print_r($sessiondata);die();
-    			if (isset($sessiondata)){
+    			if (isset($sessiondata['username'])){
     			
     				redirect('user/dashboard');
 //     				$this->load->view('dashboard_view.php');
+    			
     			}else {
     				redirect('/');
     			}
