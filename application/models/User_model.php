@@ -42,7 +42,7 @@ class User_model extends CI_Model
     				redirect('user/dashboard');
 //     				$this->load->view('dashboard_view.php');
     			
-    			}else {
+    			} else {
     				redirect('/');
     			}
     			
